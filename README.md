@@ -1,4 +1,4 @@
-# FSK Packet Modem — GNU Radio
+# FSK Packet Modem - GNU Radio
 
 This project implements a **binary FSK (Frequency Shift Keying) packet modem** in GNU Radio using separate transmitter and receiver flowgraphs. The transmitter reads text data, converts it into bits, repeats each bit according to the configured baud/sample-rate relationship, and uses a VCO-based frequency-shift mechanism to generate an FSK complex waveform. The receiver reads the generated complex waveform from a file, performs quadrature demodulation, binary slicing, bit-rate reduction, byte repacking, and finally writes the recovered data to an output file.
 
